@@ -1,30 +1,61 @@
-<div class="h-screen flex items-center justify-center">
+<!DOCTYPE html>
+<html lang="fr">
 
-    
-    <div class="w-3/4 rounded-lg shadow-lg bg-blue-900">
-      
-      <div class="border-b border-blue-400 text-blue-400">
-        <div class="p-4">X</div>
-      </div>
-      
-      
-      <div class="relative p-4 pl-20">
-        <img src="C:\Users\nohaf\Pictures\Saitamaok.png" class="absolute top-0 left-0 ml-4 mt-4 rounded-full">
-        <textarea class="bg-transparent pt-4 w-full text-white text-lg outline-none" placeholder="Exprime-toi..." rows="5"></textarea>
-      </div>
-      
-      
-      <div class="pl-20 pb-4 pr-4 flex justify-between">
-        <div class="flex text-2xl items-center">
-          <div class="mr-2">😊</div>
-          <div class="mr-2">😒</div>
-          <div class="mr-2">🤯</div>
-          <div>😍</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/twiiter-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-twitterBlue flex text-poppins">
+
+    <!--NavBar-->
+    <section class="sticky top-0 pt-2 w-2/12 h-screen border-r border-gray-700 md:w-1/12 lg:w-3/12">
+        <div class="relative w-full h-full grid justify-items-center ">
+            <!--Icon-->
+            <div>
+                <i class="my-2 fab fa-twitter text-3xl text-white cursor-pointer transition-colors duration-300 ease-in-out hover:text-blue-400"></i>
+            </div>
+
+            <div class=" h-14 text-3xl text-blue-400 -my-10 cursor-pointer">
+                <i class="inline my-2 fas fa-home"></i>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Home</span>
+            </div>
+
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
+                <i class="my-2 fas fa-hashtag "></i>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Explore</span>
+            </div>
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
+              <i class="my-2 fas fa-bell "></i>
+              <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Notification</span>
+          </div>
+
+          <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
+              <i class="my-2 fas fas fa-envelope "></i>
+              <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Messages</span>
+          </div>
+
+          <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
+              <i class="my-2 fas fa-file-alt "></i>
+              <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Lists</span>
+          </div>
+
+          <div class="flex p-2">
+            <div id="user-icon" class="rounded-full bg-people bg-cover w-12 h-12 mr-2"></div>
+            <input class="bg-transparent text-white" type="text" placeholder="Comment ca va?">
         </div>
-        <div>
-          <button class="bg-blue-400 rounded-full text-blue-100 inline-block py-2 px-4">Tweet!</button>
-        </div>
-      </div>
-      
-    </div>
-    </div>
+        
+        <div class="p-2 flex justify-between">
+            <!--Icon-->
+            <div class="relative left-2">
+                <i class="fas fa-image text-xl text-blue-400 relative top-little mr-1 cursor-pointer"></i>
+                <i class="fas fa-share-square text-xl text-blue-400  mr-1 cursor-pointer"></i>
+                <i class="far fa-smile text-xl text-blue-400  relative top-little mr-1 cursor-pointer"></i>
+                <i class="far fa-calendar-plus text-xl text-blue-400 cursor-pointer"></i>
+            </div>
+          
